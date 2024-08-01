@@ -1,0 +1,15 @@
+[package]
+org = "sameera"
+name = "scheduler"
+version = "0.1.0"
+distribution = "2201.9.2"
+
+[build-options]
+observabilityIncluded = true
+
+
+[[tool.openapi]]
+id = "delivery_api_client"
+filePath = "../delivery/delivery_openapi.yaml"
+targetModule = "delivery"
+options.mode = "client"

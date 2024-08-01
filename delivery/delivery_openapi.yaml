@@ -1,0 +1,22 @@
+openapi: 3.0.1
+info:
+  title: Delivery
+  version: 0.1.0
+servers:
+- url: "{server}:{port}/delivery"
+  variables:
+    server:
+      default: http://localhost
+    port:
+      default: "9080"
+paths:
+  /items:
+    get:
+      operationId: getItems
+      responses:
+        "200":
+          description: Ok
+          content:
+            text/plain:
+              schema:
+                type: string
