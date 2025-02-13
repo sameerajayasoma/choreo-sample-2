@@ -8,7 +8,7 @@ servers:
     server:
       default: http://localhost
     port:
-      default: "9080"
+      default: "9081"
 paths:
   /items:
     get:
